@@ -14,4 +14,10 @@ router.route('/register')
       User.register(req.body,res)
     })
 
+router.route('/login')
+
+    .post((req,res)=>{
+      User.login(req.body,res)
+    })
+
 module.exports = router;
