@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "build":"pm2 start ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
