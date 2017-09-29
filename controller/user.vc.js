@@ -23,7 +23,12 @@ var methods = {
         }, error => {
             res.send({ status: 201, message: '登陆失败' })
         })
-    }
+    },
+    getUsers(res){
+        UserModel.findOne({phoneNumber:'15151965292'}).then(data=>{
+            res.send(data)
+        })
+    },
 }
 
 module.exports = methods
