@@ -13,10 +13,6 @@ router.route('/register')
     .post((req,res)=>{
       User.register(req.body,res)
     })
-    .get((req,res)=>{
-      User.getUsers(res)
-    })
-
 router.route('/login')
 
     .post((req,res)=>{

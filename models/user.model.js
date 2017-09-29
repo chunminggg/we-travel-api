@@ -4,6 +4,7 @@ var Schema = mongoose.Schema
 var UserSchema = new Schema({
     phoneNumber: String,
     password: String,
+    token: String
 })
 
 var User = mongoose.model('User', UserSchema)
